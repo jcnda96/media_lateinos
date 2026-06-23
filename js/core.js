@@ -29,8 +29,8 @@ function initMatrixRain() {
     }
 
     // Colors
-    const isPink = Math.random() > 0.5;
-    const color = isPink ? '#ff007f' : '#ccff00';
+    const isRed = Math.random() > 0.5;
+    const color = isRed ? '#ff003c' : '#ccff00';
 
     function draw() {
         ctx.fillStyle = 'rgba(10, 10, 12, 0.05)'; // Trail effect
@@ -108,7 +108,7 @@ class UI {
     }
     static showError(elementId, msg) {
         const el = document.getElementById(elementId);
-        if(el) el.innerHTML = `<div style="color:var(--neon-pink); font-weight:bold; margin-top:1rem;">⚠️ ${msg}</div>`;
+        if(el) el.innerHTML = `<div style="color:var(--cyber-red); font-weight:bold; margin-top:1rem;">⚠️ ${msg}</div>`;
     }
     static showResult(elementId, html) {
         const el = document.getElementById(elementId);
